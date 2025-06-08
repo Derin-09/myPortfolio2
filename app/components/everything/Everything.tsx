@@ -92,7 +92,7 @@ const Everything = () => {
                                 rel="noopener noreferrer">
                                 <div className='flex gap-2 md:py-1 py-3 select-none md:float-right text-[#4B2D8A] text-sm border-1 rounded-md border-[#4B2D8A] px-5'>
                                     <Image src={WhatsApp} width={20} height={20} alt='WhatsApp logo' />
-                                    <p>Let's talk</p>
+                                    <p>Let&apos;s talk</p>
                                 </div>
                             </a>
                         </div>
@@ -167,8 +167,8 @@ const Everything = () => {
                         <p className='font-extrabold text-2xl mb-3'>Sam-Ashimi Aderinsola</p>
                         <div className='text-xs text-neutral-500'>
                             <p className='mb-2'>👋 My name is Sam-Ashimi Aderinsola, but you can just call me Derin. Nice to meet you!</p>
-                            <p className='mb-2'>👨‍💻 I've been developing and programming websites with JavaScript, React JS, Next.js and TypeScript for over 2 years.  </p>
-                            <p className='mb-2'>🎓 I'm currently pursuing a degree in Computer Science from Bells University of Technology</p>
+                            <p className='mb-2'>👨‍💻 I&apos;ve been developing and programming websites with JavaScript, React JS, Next.js and TypeScript for over 2 years.  </p>
+                            <p className='mb-2'>🎓 I&apos;m currently pursuing a degree in Computer Science from Bells University of Technology</p>
                             <p className='mb-2'>💡 Advanced in Front-end development with React, NextJS, Git, Vercel and Firebase.</p>
                             <p className='mb-2'> 🚀 Trying to be a little better than yesterday every single day.</p>
                         </div>
@@ -351,7 +351,7 @@ const Everything = () => {
                                 target="_blank"
                                 rel="noopener noreferrer">
                                 <div className='flex gap-1'>
-                                    <p className='select-none'>Let's Talk</p>
+                                    <p className='select-none'>Let&apos;s Talk</p>
                                     <Image src={WhatsApp} width={20} height={20} alt='WhatsApp logo' />
                                 </div>
                             </a>
