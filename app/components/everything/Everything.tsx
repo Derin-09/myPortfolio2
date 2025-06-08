@@ -329,7 +329,7 @@ const Everything = () => {
                                     Bells University of Technology <br />
                                     Relevant Coursework: Data Structures, Digital Logic Design, Discrete Mathematics
                                 </p>
-                                <p className='font-bold text-sm text-[#4B2D8A]'>January 2025 - present</p>
+                                <p className='font-bold text-sm text-[#4B2D8A]'>September 2023 - present</p>
                             </div>
                         </div>
                     </section>
