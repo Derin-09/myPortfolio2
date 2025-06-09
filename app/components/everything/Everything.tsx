@@ -5,7 +5,9 @@ import { FiMenu, FiX } from 'react-icons/fi'
 import Link from 'next/link'
 import Image from 'next/image'
 import Logo from '@/public/images/Logo.svg'
-import Socials from '@/public/images/SocialMedias.png'
+import LinkedIn from '@/public/images/linkedin.png'
+import Github from '@/public/images/github.png'
+import Behance from '@/public/images/behance.svg'
 import MyPicture from '@/public/images/Mypicture.jpg'
 import PictureTwo from '@/public/images/picturetwo.jpg'
 import WhatsApp from '@/public/images/WhatsappLogo.png'
@@ -49,7 +51,7 @@ const Everything = () => {
                             </div>
                         </div>
 
-                        <div className={`flex justify-between md:gap-4 select-none rounded-2xl bg-[#090E16] md:bg-transparent md:font-semibold md:text-xs text-2xl py-3  cursor-pointer flex-col md:flex md:flex-row md:items-center md:shadow-none shadow-[0_0_20px_#7B4AE280] absolute md:static w-[50%] h-[50%] right-4 top-16 md:w-auto  transform transition-transform duration-300 ease-in-out ${isOpen ? 'flex': 'hidden' }`}>
+                        <div className={`flex justify-between md:gap-4 select-none rounded-2xl bg-[#090E16] md:bg-transparent md:font-semibold md:text-xs text-2xl py-3  cursor-pointer flex-col md:flex md:flex-row md:items-center md:shadow-none shadow-[0_0_20px_#7B4AE280] absolute md:static w-[50%] h-[50%] right-4 top-16 md:w-auto  transform transition-transform duration-300 ease-in-out ${isOpen ? 'flex' : 'hidden'}`}>
                             <Link href='#house' className='hover:text-[#7B4AE2] flex-1 pl-5 '>Home</Link>
                             <Link href='#professional' className='hover:text-[#7B4AE2] md:active:bg-transparent  active:bg-[#7B4AE2] flex-1 pl-5 '>Professional</Link>
                             <Link href='#about' className='hover:text-[#7B4AE2] md:active:bg-transparent  active:bg-[#7B4AE2] flex-1 pl-5 '>About</Link>
@@ -60,15 +62,31 @@ const Everything = () => {
                         </div>
                     </div>
                     <section className='flex flex-col items-start md:flex-row  md:justify-between mt-10 md:items-center'>
-                        <div className='md:hidden flex justify-center w-full mb-6'>
-                            <Image src={Socials} width={120} height={100} alt='Contact me on social media' className='mt-1 md:w-[80px] md:h-[60] ' />
+                        <div className='md:hidden flex gap-2 justify-center w-full mb-6'>
+                            <a href={'https://www.linkedin.com/in/aderinsola-sam-ashimi'}>
+                                <Image src={LinkedIn} width={25} height={60} alt='Contact me on LinkedIn' className='mt-1' />
+                            </a>
+                            <a href={'https://github.com/Derin-09'}>
+                                <Image src={Github} width={25} height={60} alt='Contact me on GitHub' className='mt-1' />
+                            </a>
+                            <p>
+                                <Image src={Behance} width={25} height={60} alt='Contact me on Behance' className='mt-1' /></p>
                         </div>
                         <div className='flex-1 order-2 md:order-1'>
                             <div className='bg-[#7B4AE21A] text-[#7B4AE2] rounded-lg w-fit md:px-2 md:py-1 py-2 px-5 font-bold md:mb-3 mb-7 md:text-lg text-2xl '>✌️Hello!</div>
                             <p className='font-extrabold md:text-3xl text-4xl md:mb-3 mb-4'>Sam-Ashimi<br /> Aderinsola</p>
                             <p className='md:text-sm text-xl text-neutral-500 md:mb-3 mb-5'>Front-end developer</p>
-                            <div className='hidden md:block'>
-                                <Image src={Socials} width={80} height={60} alt='Contact me on social media' className='mt-1' />
+                            <div className='hidden md:flex gap-2'>
+                                <a href={'https://github.com/Derin-09'}>
+                                    <Image src={Github} width={25} height={60} alt='Contact me on GitHub' className='mt-1' /></a>
+                                <a 
+                                    href={'https://www.linkedin.com/in/aderinsola-sam-ashimi'}
+                                    target="_blank"
+                                    rel="noopener noreferrer">
+                                    <Image src={LinkedIn} width={25} height={60} alt='Contact me on LinkedIn' className='mt-1' />
+                                </a>
+                                <p>
+                                    <Image src={Behance} width={25} height={60} alt='Contact me on Behance' className='mt-1' /></p>
                             </div>
                         </div>
                         <div className='flex-1 flex justify-center order-1 md:order-2 w-full'>
@@ -79,11 +97,11 @@ const Everything = () => {
                         <div className='flex-1 md:block flex flex-row gap-2 items-center order-3'>
                             <div className='flex gap-2 select-none md:float-right text-[#4B2D8A] text-sm'>
 
-                                <a href='/MyResume.pdf' download>
+                                <a href='/SamAshimiAderinsolaResume.pdf' download>
                                     <p>Download CV</p>
                                 </a>
-                                <a href='/MyResume.pdf' download>
-                                    <Image src={Download} width={16} height={10} alt='Download' />
+                                <a href='/SamAshimiAderinsolaResume.pdf' download>
+                                    <Image src={Download} width={16} height={10} alt='Download my CV' />
                                 </a>
                             </div><br />
                             <a
@@ -116,9 +134,9 @@ const Everything = () => {
                         </div>
                     </div>
 
-                        <div className='border-[1.5px] border-[#7B4AE2] rounded-2xl p-6 flex justify-center items-center mb-8 flex-1 md:h-[150px]'>
+                    <div className='border-[1.5px] border-[#7B4AE2] rounded-2xl p-6 flex justify-center items-center mb-8 flex-1 md:h-[150px]'>
                         <div className='flex flex-col items-center justify-center'>
-                            <Image src={Learn} width={100} height={100} alt='Learning everyday' className='md:h-[50px]'/>
+                            <Image src={Learn} width={100} height={100} alt='Learning everyday' className='md:h-[50px]' />
                             <div className='text-center'>
                                 <p className='font-extralight'>Learning</p>
                                 <p className='font-bold text-xl'>everyday</p>
@@ -126,9 +144,9 @@ const Everything = () => {
                         </div>
                     </div>
 
-                        <div className='border-[1.5px] border-[#7B4AE21A] bg-[#7B4AE21A] rounded-2xl p-6 flex flex-1 justify-center items-center mb-8 md:h-[150px]'>
+                    <div className='border-[1.5px] border-[#7B4AE21A] bg-[#7B4AE21A] rounded-2xl p-6 flex flex-1 justify-center items-center mb-8 md:h-[150px]'>
                         <div className='flex flex-col items-center justify-center'>
-                            <Image src={Project} width={100} height={100} alt='Building real projects' className='md:h-[50px]'/>
+                            <Image src={Project} width={100} height={100} alt='Building real projects' className='md:h-[50px]' />
                             <div className='text-center'>
                                 <p className='font-extralight'>Building</p>
                                 <p className='font-bold text-xl'>real projects</p>
@@ -225,9 +243,9 @@ const Everything = () => {
                                     <p className='bg-[#7B4AE21A] text-[#7B4AE2] rounded-md w-fit px-2 font-bold text-sm mb-2'>Next.js</p>
                                     <p className='bg-[#7B4AE21A] text-[#7B4AE2] rounded-md w-fit px-2 font-bold text-sm mb-2'>Tailwind</p>
                                 </div>
-                                <Link href={''}>
+                                <div>
                                     <Image src={Todo} width={300} height={200} alt='A picture of the plant website' className='rounded-md cursor-pointer' />
-                                </Link>
+                                </div>
                             </div>
                         </div>
 
@@ -389,10 +407,16 @@ const Everything = () => {
             <section className="bg-[#7B4AE21A] select-none">
                 <section className="px-15 py-3 w-full flex md:flex-row flex-col justify-between items-center h-full md:gap-0 gap-2">
                     <div className="flex-1 text-xs text-neutral-500 order-2 md:order-1">Copyright Sam-Ashimi Aderinsola · 2025</div>
-                    <div className="flex flex-1 justify-center order-1 md:order-2">
-                        <Image src={Socials} width={80} height={50} alt="linkedin, github" />
+                    <div className="flex gap-2 flex-1 justify-center order-1 md:order-2">
+                        <a href={'https://www.linkedin.com/in/aderinsola-sam-ashimi'}>
+                            <Image src={LinkedIn} width={25} height={60} alt='Contact me on LinkedIn' className='mt-1' />
+                        </a>
+                        <a href={'https://github.com/Derin-09'}>
+                            <Image src={Github} width={25} height={60} alt='Contact me on GitHub' className='mt-1' /></a>
+                        <p>
+                            <Image src={Behance} width={25} height={60} alt='Contact me on Behance' className='mt-1' /></p>
                     </div>
-                    <div className="text-[#7B4AE21A] flex-1 text-right order-3 md:order-3 hidden md:block">Goodbye!</div>
+                    <div className="text-[#7B4AE2] flex-1 text-right order-3 md:order-3 hidden md:block">Goodbye!</div>
                 </section>
             </section>
 
