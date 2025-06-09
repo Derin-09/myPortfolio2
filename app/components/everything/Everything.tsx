@@ -53,7 +53,6 @@ const Everything = () => {
 
                         <div className={`flex justify-between md:gap-4 select-none rounded-2xl bg-[#090E16] md:bg-transparent md:font-semibold md:text-xs text-2xl py-3  cursor-pointer flex-col md:flex md:flex-row md:items-center md:shadow-none shadow-[0_0_20px_#7B4AE280] absolute md:static w-[50%] h-[50%] right-4 top-16 md:w-auto  transform transition-transform duration-300 ease-in-out ${isOpen ? 'flex' : 'hidden'}`}>
                             <Link href='#house' className='hover:text-[#7B4AE2] flex-1 pl-5 '>Home</Link>
-                            <Link href='#professional' className='hover:text-[#7B4AE2] md:active:bg-transparent  active:bg-[#7B4AE2] flex-1 pl-5 '>Professional</Link>
                             <Link href='#about' className='hover:text-[#7B4AE2] md:active:bg-transparent  active:bg-[#7B4AE2] flex-1 pl-5 '>About</Link>
                             <Link href='#skills' className='hover:text-[#7B4AE2] md:active:bg-transparent  active:bg-[#7B4AE2] flex-1 pl-5 '>Skills</Link>
                             <Link href='#portfolio' className='hover:text-[#7B4AE2] md:active:bg-transparent  active:bg-[#7B4AE2] flex-1 pl-5 '>Portfolio</Link>
@@ -120,7 +119,7 @@ const Everything = () => {
 
 
 
-            {/***********************PROFESSIONAL***************************************/}
+            {/****************************ABOUT*****************************************/}
             <section className='mt-20 mb-10' id='professional'>
                 <hr className='border-0.5 w-full mt-10 text-[#4B2D8A] md:block hidden mb-20' />
                 <section className='w-full px-12 md:px-40 md:flex gap-10 '>
@@ -172,7 +171,8 @@ const Everything = () => {
                 </section>
             </section>
 
-            {/****************************ABOUT*****************************************/}
+
+
             <section className='select-none' id='about'>
 
                 <hr className='border-0.5 w-full text-[#4B2D8A] md:block hidden mt-25' />
